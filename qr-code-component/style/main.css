@@ -1,0 +1,83 @@
+:root {
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+
+    --color-slate-300: hsl(212, 45%, 89%);
+    --color-slate-500: hsl(216, 15%, 48%);
+    --color-slate-900: hsl(218, 44%, 22%);
+
+    /* Typography */
+    /*
+    Outfir Bolt
+    22px 120% Line Height 0px Letter Spacing
+    */
+    --text-preset-1: Bold 22px 'Outfit', sans-serif;
+    --text-preset-1_letter-height: 0px;
+    /*
+    Outfir Regular
+    15px 140% Line Height 0.2px Letter Spacing
+    */
+    --text-preset-2: Regular 15px 'Outfit', sans-serif;
+    --text-preset-2_letter-spacing: 0.2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-slate-300);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+
+    width: 320px;
+
+    background-color: var(--white);
+    margin: auto;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.hero__image-container{
+    max-width: 288px;
+    max-height: 288px;
+    margin-bottom: 24px;
+}
+.hero__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hero__description-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__title{
+    font: var(--text-preset-1);
+    color: var(--color-slate-900);
+    text-align: center;
+    letter-spacing: var(--text-preset-1_letter-spacing);
+}
+.hero__description{
+    font: var(--text-preset-2);
+    color: var(--color-slate-500);
+    text-align: center;
+    letter-spacing: var(--text-preset-2_letter-spacing);
+    margin-bottom: 40px;
+}
