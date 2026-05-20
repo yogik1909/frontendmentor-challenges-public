@@ -72,12 +72,18 @@ body {
     font: var(--text-preset-1);
     color: var(--color-slate-900);
     text-align: center;
-    letter-spacing: var(--text-preset-1_letter-spacing);
+    letter-spacing: var(--text-preset-1_letter-height);
 }
 .hero__description{
-    font: var(--text-preset-2);
-    color: var(--color-slate-500);
+    font: var(--text-preset-2); 
+    color: var(--color-slate-500); /* Slate 500 required by the design */
     text-align: center;
     letter-spacing: var(--text-preset-2_letter-spacing);
     margin-bottom: 40px;
 }
+
+.footer__attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+  }
